@@ -1,0 +1,15 @@
+flowchart LR
+    p0["api"]
+    p1["core"]
+    p2["dashboard"]
+    p3["design_system"]
+    p4["docs"]
+    p5["logging"]
+    p6["unpublished_theme (missing)"]
+    p0 --> p1
+    p0 --> p5
+    p2 --> p0
+    p2 --> p3
+    p3 --> p1
+    p4 --> p6
+    p5 --> p1

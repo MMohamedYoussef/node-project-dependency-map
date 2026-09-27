@@ -1,0 +1,52 @@
+{
+  "packages": [
+    "api",
+    "core",
+    "dashboard",
+    "design_system",
+    "docs",
+    "logging"
+  ],
+  "missing": [
+    "unpublished_theme"
+  ],
+  "cycles": [],
+  "install_order": [
+    "core",
+    "logging",
+    "api",
+    "design_system",
+    "dashboard",
+    "docs"
+  ],
+  "edges": [
+    {
+      "from": "api",
+      "to": "core"
+    },
+    {
+      "from": "api",
+      "to": "logging"
+    },
+    {
+      "from": "dashboard",
+      "to": "api"
+    },
+    {
+      "from": "dashboard",
+      "to": "design_system"
+    },
+    {
+      "from": "design_system",
+      "to": "core"
+    },
+    {
+      "from": "docs",
+      "to": "unpublished_theme"
+    },
+    {
+      "from": "logging",
+      "to": "core"
+    }
+  ]
+}
